@@ -1,0 +1,326 @@
+<html>
+<head>
+<style>
+td{
+font-size:18px;
+}
+li{
+font-size:20px;
+}
+button{
+background-color:darkblue;
+color:white;
+height:30px;
+margin-left:60px;
+margin-bottom:40px;
+border-radius:30px;
+font-size:20px;
+}
+</style>
+<title>Functions</title>
+</head>
+<body bgcolor="floralwhite" border="left" bordercolor="darkblue">
+<center> 
+<table bgcolor="darkblue" width="1300">
+<tr>
+<td>
+<font  size="5" face="Candara" color="floralwhite">
+<h1>
+<center>
+<u>FUNCTIONS</u>
+</center>
+</h1>
+</font>
+</td>
+</tr>
+</table>
+</center>
+<br><br>
+
+<h2>
+<font size="5" face="castellar" color="darkblue">
+What are Functions?
+</font>
+</h2>
+<p>
+<font size="5">
+Functions divide the larg part of the program into small parts which makes the program code organised and easy to read.
+<br><br>
+<font size="4">
+Defining a function involve three steps in the program code. these are:-
+<ol type="1">
+<li><b>FUNCTION DECLARATION</b>:-&nbsp;&nbsp;&nbsp;The function is declared at the start with data type which defines the type and name of function.</li>
+<br>
+<li><b>FUNCTION CALLING</b>:-&nbsp;&nbsp;&nbsp;The function is called in the program code whenever required. One have to call for the function for its block of code to be executed.</li>
+<br>
+<li><b>FUNCTION BODY</B>:-&nbsp;&nbsp;&nbsp;The function body includes everything that has to done on calling of function.</li>
+</ol>
+</font>
+</font>
+</p>
+<br><br>
+<center><img src="functionflowchart.png"></img></center>
+<br><br><hr><br>
+<h2>
+<font size="5" face="castellar" color="darkblue">
+Function without Arguement
+</font>
+</h2>
+<font size="5">
+When a function has no arguements, it does not recieve any data from the calling function. 
+Similarly function with no return does not recieve any data from the called function.
+</font>
+<br><br><br>
+<table bgcolor="white" align="center" width="1300">
+<tr>
+<th><em>Syntax</em></th>
+<th>Input</th>
+<th>Output</th>
+</tr>
+<tr>
+<td>
+<pre>
+#include&lt;stdio.h&gt;
+void main()  
+{
+void abc(); <em><u>(Function decalaration)</u></em>  
+abc();      <em><u>(Function calling)</u></em>
+}
+void abc()  <em><u>(Function</u></em>
+{             <em><u>B</u></em>
+________;     <em><u>O</u></em>
+________;     <em><u>D</u></em>
+}             <em><u>Y)</u></em>
+
+</pre>
+</td>
+<td>
+<pre>
+#include&lt;stdio.h&gt;
+void main()
+{
+void add();
+void sub();
+clrscr();
+add();
+sub();
+getch();
+}
+void add()
+{
+int a,b,c;
+printf("enter a=");
+scanf("\n%d",&a);
+printf("\nenter b=");
+scanf("\n%d",&b);
+c=a+b;
+printf("\na+b=%d",c);
+}
+void sub()
+{
+int a,b,c;
+printf("\nenter a=");
+scanf("\n%d",&a);
+printf("\nenter b=");
+scanf("\n%d",&b);
+c=a-b;
+printf("\na-b=%d",c);
+}
+</pre>
+</td>
+<td align="right">
+<video controls height="400"width="600"><source src="funcwoarg.mp4" type="video/MP4"></video>
+</td>
+</tr>
+</table>
+
+<br><br><hr><br><br>
+<h2>
+<font size="5" face="castellar" color="darkblue">
+Function with Arguement
+</font>
+</h2>
+<font size="5">
+When a function has arguements, the variables are declared with function declaration, and it recieves data from the calling function. 
+</font>
+<br><br><br>
+<table bgcolor="white" align="center" width="1200">
+<tr>
+<th><em>Syntax</em></th>
+<th>Input</th>
+<th>Output</th>
+</tr>
+<tr>
+<td>
+<pre>
+#include&lt;stdio.h&gt;
+void main()  
+{
+void abc(int a,int b); <em><u>(Function decalaration)</u></em>  
+abc(10,20);            <em><u>(Function calling)</u></em>
+}
+void abc(int a,int b)  <em><u>(Function</u></em>
+{                       <em><u>B</u></em>
+________;               <em><u>O</u></em>
+________;               <em><u>D</u></em>
+}                       <em><u>Y)</u></em>
+
+</pre>
+</td>
+<td>
+<pre>
+#include&lt;stdio.h&gt;
+void main()
+{
+void add (int a, int b);
+clrscr();
+add(19,20);
+add(45,66);
+}
+void add(int a, int b)
+{
+int c;
+c=a+b;
+printf("%d\n",c);
+}
+</pre>
+</td>
+<td align="right">
+<img height="400" width="600" src="functionwitharguement.png"></img>
+</td>
+</tr>
+</table>
+</body>
+
+
+<br><br><hr><br><br>
+<h2>
+<font size="5" face="castellar" color="darkblue">
+Function with Return
+</font>
+</h2>
+<font size="5">
+In a function with return, it recieves data from the called function. 
+</font>
+<br><br><br>
+<table bgcolor="white" align="center" width="1200">
+<tr>
+<th><em>Syntax</em></th>
+<th>Input</th>
+<th>Output</th>
+</tr>
+<tr>
+<td>
+<pre>
+#include&lt;stdio.h&gt;
+void main()  
+{
+int abc();              <em><u>(Function decalaration)</u></em>  
+printf("%d",abc());     <em><u>(Function calling)</u></em>
+}
+int abc()               <em><u>(Function</u></em>
+{   
+int c;                      <em><u>B</u></em>
+________;                   <em><u>O</u></em>
+________;
+return(c);                  <em><u>D</u></em>
+}                           <em><u>Y)</u></em>
+
+</pre>
+</td>
+<td>
+<pre>
+#include&lt;stdio.h&gt;
+void main()
+{
+int add();
+int percentage;
+clrscr();
+add();
+percentage=add()/3;
+printf("%d",percentage);
+getch();
+}
+int add()
+{
+int phys,chem,bio,total;
+phys=89;
+chem=90;
+bio=95;
+total=phys+chem+bio;
+return(total);
+}
+
+</pre>
+</td>
+<td align="right">
+<img height="400" width="600" src="functionwithreturn.png"></img>
+</td>
+</tr>
+</table>
+
+<br><br><hr><br><br>
+<h2>
+<font size="5" face="castellar" color="darkblue">
+Function with Return and Arguement
+</font>
+</h2>
+<font size="5">
+In a function with return and with arguement, it recieves data from the called function and also from the calling of function. 
+</font>
+<br><br><br>
+<table bgcolor="white" align="center" width="1200">
+<tr>
+<th><em>Syntax</em></th>
+<th>Input</th>
+<th>Output</th>
+</tr>
+<tr>
+<td>
+<pre>
+#include&lt;stdio.h&gt;
+void main()  
+{
+int abc(int a,int b);    <em><u>(Function decalaration)</u></em>  
+printf("%d",abc(34,45)); <em><u>(Function calling)</u></em>
+}
+int abc(int a,int b)     <em><u>(Function</u></em>
+{ 
+int c;                    <em><u>B</u></em>
+________;                 <em><u>O</u></em>
+________;
+return(c);                <em><u>D</u></em>
+}                         <em><u>Y)</u></em>
+
+</pre>
+</td>
+<td>
+<pre>
+#include&lt;stdio.h&gt;
+void main()
+{
+int add(int a, int b);
+int d;
+clrscr();
+d=add(40,50)+12;
+printf("%d",d);
+getch();
+}
+int add(int a, int b)
+{
+int c;
+c=a+b;
+return(c);
+}
+</pre>
+</td>
+<td align="right">
+<img height="400" width="600" src="functionwithreturnandarguement.png"></img>
+</td>
+</tr>
+</table>
+<br><br><br>
+<a href="control statements.html"><button>Previous to control statements</button></a>
+<a href="array.html"><button>Next to array </button></a>
+</body>
+</html>

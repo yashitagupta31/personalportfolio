@@ -1,0 +1,110 @@
+<html>
+<head>
+<title>constructor</title>
+<style>
+body{
+background-color:snow;
+margin: 10px 10px 10px 10px;
+}
+h1.a{
+font-size:50px;
+font-family:latin;
+background-color:lightseagreen;
+text-align:center;
+color:white;
+}
+h1.b{
+font-size:30px;
+font-family:imprint mt shadow;
+color:lightseagreen;
+border-bottom:ridge lightseagreen;
+}
+.c{
+font-size:26px;
+font-family:imprint mt shadow;
+color:lightseagreen;
+padding-left:15px;
+}
+p.p{
+font-size:24px;
+}
+p.q{
+font-size:22px;
+}
+td{
+font-size:18px;
+}
+table{
+border-style:dashed;
+padding:5px;
+}
+th{
+font-size:20px;
+}
+i{
+color:brown;
+}
+</style>
+</head>
+<body>
+<h1 class="a">CONSTRUCTOR</h1>
+<br>
+<h1 class="b">What is Constructor?</h1>
+<p class="p">Constructor is a user defined function used for initializing of variables.</p>
+<p class="q">There is no use of any keyword such as void, int, float, char etc. while declaration of constructor.
+<br>
+The name of constructor is same as that of class.
+<br>
+There is no need to call a constructor unlike function.
+</p>
+<br>
+
+<table align="center" cellspacing="5px" width="900">
+<tr>
+<th>Input</th>
+<th>Output</th>
+</tr>
+<tr>
+<td>
+<pre>
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+class display
+{
+private: int a[5],b;
+public:
+display()
+{
+a[0]=10;
+a[1]=20;
+a[2]=30;
+a[3]=40;
+a[4]=50;
+}
+void print()
+{
+b=a[0]+a[1]+a[2]+a[3]+a[4];
+cout&lt;&lt;b;
+}
+~display()
+{
+}
+};
+void main()
+{
+clrscr();
+display a;
+a.print();
+getch();
+}
+</pre>
+</td>
+<td valign="top">
+<img src="constructor.png">
+</td>
+</tr>
+</table>
+<br><br>
+
+</body>
+</html>

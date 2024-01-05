@@ -1,0 +1,176 @@
+<html>
+<head>
+<style>
+td{
+font-size:18px;
+}
+button{
+background-color:darkblue;
+color:white;
+height:30px;
+margin-left:60px;
+margin-bottom:40px;
+border-radius:30px;
+font-size:20px;
+}
+</style>
+<title>Pointer</title>
+</head>
+<body bgcolor="floralwhite" border="left" bordercolor="darkblue">
+<center> 
+<table bgcolor="darkblue" width="1300">
+<tr>
+<td>
+<font  size="5" face="Candara" color="floralwhite">
+<h1>
+<center>
+<u>POINTER</u>
+</center>
+</h1>
+</font>
+</td>
+</tr>
+</table>
+</center>
+<br><br>
+
+<h2>
+<font size="5" face="castellar" color="darkblue">
+What is pointer?
+</font>
+</h2>
+<p>
+<ul type="square">
+<font size="5">
+<li>Pointer is a variable which is used to store address of another variable.</li>
+<br>
+<li>A pointer variable is declared with a '<b>* </b>' symbol. for eg: int *x;</li>
+<br>
+<li>While assigning a value to the pointer variable '<b>& </b>' operator is used before another variable whose address is being given to the pointer. 
+for eg: x=& a;</li>
+<br> 
+<li>To reach to the value of the variable which is being pointed out '*' symbol is used. for eg: printf("%d",*x);</li>
+<br>
+<li><b>Pointer to Pointer Variable:</b> This variable is used to point out a pointer variable. Here we use '**'. 
+for eg: int**y;</li>
+</font>
+</ul>
+<br><br><br>
+
+<table bgcolor="white" align="center" width="1300">
+<tr>
+<th>Input</th>
+<th>Output</th>
+</tr>
+<tr>
+<td>
+<pre>
+#include&lt;stdio.h&gt;
+main()
+{
+int a,b;
+int *d,*e,**f;
+clrscr();
+a=10;
+b=20;
+d=&a;
+e=&b;
+f=&e;
+printf("%d\n%d\n%d\n%d\n%d\n",a,b,*d,e,*f);
+getch();
+}
+</pre>
+</td>
+<td align="right">
+<img height="400" width="600" src="pointer.png"></img>
+</td>
+</tr>
+</table>
+
+<br><br><hr><br><br>
+<h1><center>Pointer With Array</center></h1>
+<table bgcolor="white" align="center" width="1300">
+<tr>
+<th>Input</th>
+<th>Output</th>
+</tr>
+<tr>
+<td>
+<pre>
+#include&lt;stdio.h&gt;
+main()
+{
+int i;
+int var1=10;
+int var2=20;
+int var3=30;
+int var4=40;
+int *ptr_arr[4];
+clrscr();
+ptr_arr[0]=&var1;
+ptr_arr[1]=&var2;
+ptr_arr[2]=&var3;
+ptr_arr[3]=&var4;
+for(i=0;i&lt;4;i++)
+{
+printf("value of var%d=%d\t address:%p\n",i+1,*ptr_arr[i],ptr_arr[i]);
+}
+getch();
+}
+</pre>
+</td>
+<td align="right">
+<img height="400" width="600" src="pointer with array.png"></img>
+</td>
+</tr>
+</table>
+
+<br><br><hr><br><br>
+<h1><center>Arithmetic Operation in Pointer</center></h1>
+<table bgcolor="white" align="center" width="1300">
+<tr>
+<th>Input</th>
+<th>Output</th>
+</tr>
+<tr>
+<td>
+<pre>
+#include&lt;stdio.h&gt;
+main()
+{
+int a=35;
+int *b=&a;
+float c=35.6;
+float *d=&c;
+char e='a';
+char *f=&e;
+clrscr();
+printf("b=%u\n",b);
+b++;
+printf("b++=%u\n",b);
+b--;
+printf("b--=%u\n",b);
+printf("d=%u\n",d);
+d++;
+printf("d++=%u\n",d);
+d--;
+printf("d--=%u\n",d);
+printf("f=%u\n",f);
+f++;
+printf("f++=%u\n",f);
+f--;
+printf("f--=%u\n",f);
+getch();
+}
+</pre>
+</td>
+<td align="right">
+<img height="400" width="600" src="arith ope in pointer.png"></img>
+</td>
+</tr>
+</table>
+<br><br><br>
+<a href="union.html"><button>Previous to union</button></a>
+<a href="string functions.html"><button>Next to string functions </button></a>
+</body>
+</html>

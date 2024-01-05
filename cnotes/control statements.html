@@ -1,0 +1,422 @@
+<html>
+<head>
+<style>
+button{
+background-color:darkblue;
+color:white;
+height:30px;
+margin-left:60px;
+margin-bottom:40px;
+border-radius:30px;
+font-size:20px;
+}
+</style>
+<link rel="stylesheet" href="stylingcnotes.css">
+<title>control statements</title>
+</head>
+<body bgcolor="floralwhite" border="left" bordercolor="darkblue">
+<center> 
+<table bgcolor="darkblue" width="1300">
+<tr>
+<td>
+<font  size="5" face="Candara" color="floralwhite">
+<h1>
+<center>
+<u>CONTROL STATEMENTS</u>
+</center>
+</h1>
+</font>
+</td>
+</tr>
+</table>
+</center>
+<br><br>
+
+<h2>
+<font size="5" face="castellar" color="darkblue">
+What are Control statements?
+</font>
+</h2>
+<p>
+<font size="5">
+Control statements control the flow of the program. 
+They enable the computer to know that whether to execute certain set of statements or not under a given condition
+</font>
+</p>
+<br>
+<center><img src="controlstatementflowchart.png"></img></center>
+
+<h2>
+<font size="5" face="castellar" color="darkblue">
+If
+</font>
+</h2>
+<font size="5">
+It is used to specify a block of code to be executed if specified condition is true.
+</font>
+<br><br>
+
+<h2>
+<font size="5" face="castellar" color="darkblue">
+Else
+</font>
+</h2>
+<font size="5">
+It is used to specify a block of code to be executed if the condition specified in ‘if’ is false.
+</font>
+<br><br>
+
+<h2>
+<font size="5" face="castellar" color="darkblue">
+Switch
+</font>
+</h2>
+<font size="5">
+This statement is used when we need to execute a single set of statements under specified value from a given list of values. 
+In other words it executes one block of statement among many alternatives.
+
+<br><br>
+<table bgcolor="white" align="center" width="1200" cellpadding="5">
+<tr>
+<th><em>Syntax</em></th>
+<th>Input</th>
+<th>Output</th>
+</tr>
+<tr>
+<td>
+<pre>
+#include&lt;stdio.h&gt;
+main()
+{
+switch (choice)
+{	
+case 1:
+_____;
+_____;
+case 2:
+_____;
+_____;
+case 3:
+_____;
+_____;
+}
+getch();
+}
+</pre>
+</td>
+<td>
+<pre>
+#include&lt;stdio.h&gt;
+main()
+{
+int a;
+clrscr();
+a=4;
+switch (a)
+{
+case 1:
+printf("Monday");
+case 2:
+printf("\nTuesday");
+case 3:
+printf("\nWednesday");
+case 4:
+printf("\nThursday");
+case 5:
+printf("\nFriday");
+case 6:
+printf("\nSaturday");
+case 7:
+printf("\nSunday");
+}
+getch();
+}
+</pre>
+</td>
+<td align="right">
+<img src="switchwithoutbreak.png" height="300" width="500"/>
+</td>
+</tr>
+</table>
+<br><hr><br>
+
+
+<h2>
+<font size="5" face="castellar" color="darkblue">
+For
+</font>
+</h2>
+<font size="5">
+This statement allows you to repeat a block of statements a specific number of times according to the given condition.
+<br><br><br>
+</font>
+
+<table bgcolor="white" align="center" width="1100">
+<tr>
+<th><em>Syntax</em></th>
+<th>Input</th>
+<th>Output</th>
+</tr>
+<tr>
+<td>
+<pre>
+#include&lt;stdio.h&gt;
+main()
+{
+int a;
+for(initializing part, conditional part, inc/dec)
+{	
+________;
+________;
+________;
+}
+getch();
+}
+</pre>
+</td>
+<td>
+<pre>
+#include&lt;stdio.h&gt;
+main()
+{
+int i;
+for(i=1;i&lt;=30;i++)
+{
+printf("\n%d",i);
+}
+getch();
+}
+</pre>
+</td>
+<td align="right">
+<img src="forloop.png" height="300" width="500"/>
+</td>
+</tr>
+</table>
+
+<br><br><hr><br>
+<h2>
+<font size="5" face="castellar" color="darkblue">
+While
+</font>
+</h2>
+<font size="5">
+This statement allows you to repeat a block of statements a specific number of times according to the given condition.
+Here the initializing part is mentioned before ‘while’ where the variable is assigned value and the conditional part where the condition is specified is mentioned with while and lastly the increment/ decrement part is mentioned under while.
+<br><br><br>
+</font>
+
+<table bgcolor="white" align="center" width="1100">
+<tr>
+<th><em>Syntax</em></th>
+<th>Input</th>
+<th>Output</th>
+</tr>
+<tr>
+<td>
+<pre>
+#include&lt;stdio.h&gt;
+main()
+{
+int a;
+a=<em>value</em>;
+while(condition)
+{	
+________;
+________;
+Ind/dec;
+}
+getch();
+}
+</pre>
+</td>
+<td>
+<pre>
+#include&lt;stdio.h&gt;
+main()
+{
+int i;
+i=0;
+while (i&lt;=50)
+{
+printf ("%d\n",i);
+i=i+5;
+}
+getch();
+}
+</pre>
+</td>
+<td align="right">
+<img src="whileloop.png" height="300" width="500"/>
+</td>
+</tr>
+</table>
+
+<br><br><hr><br>
+<h2>
+<font size="5" face="castellar" color="darkblue">
+Do While
+</font>
+</h2>
+<font size="5">
+This statement allows you to repeat a block of statements a specific number of times according to the given condition.
+Here the initializing part is mentioned before ‘while’ where the variable is assigned value and 
+the increment/ decrement part is mentioned under do.
+and lastly the conditional part where the condition is specified is mentioned under while 
+<br><br><br>
+</font>
+
+<table bgcolor="white" align="center" width="1100">
+<tr>
+<th><em>Syntax</em></th>
+<th>Input</th>
+<th>Output</th>
+</tr>
+<tr>
+<td>
+<pre>
+#include&lt;stdio.h&gt;
+main()
+{
+int i;
+i=<em>value</em>;
+do
+{
+________;
+________;
+inc/dec;
+}
+while (conditional part);
+getch();
+}
+</pre>
+</td>
+<td>
+<pre>
+#include&lt;stdio.h&gt;
+main()
+{
+int i;
+clrscr();
+i=0;
+do
+{
+printf ("%d\n",i);
+i=i+9;
+}
+while(i&lt;100);
+getch();
+}
+</pre>
+</td>
+<td align="right">
+<img src="dowhileloop.png" height="300" width="500"/>
+</td>
+</tr>
+</table>
+
+<br><br><hr><br>
+<h2>
+<font size="5" face="castellar" color="darkblue">
+Goto
+</font>
+</h2>
+<font size="5">
+The goto statement is a jump statement which can be used to jump from anywhere to anywhere within a function.
+<br><br><br>
+</font>
+
+<table bgcolor="white" align="center" width="1100">
+<tr>
+<th><em>Syntax</em></th>
+<th>Input</th>
+<th>Output</th>
+</tr>
+<tr>
+<td>
+<pre>
+#include&lt;stdio.h&gt;
+main()
+{
+int i;
+______;
+______;
+goto d;
+______;
+______;
+d:
+______;
+______;
+getch();
+}
+</pre>
+</td>
+<td>
+<pre>
+#include&lt;stdio.h&gt;
+main()
+{
+char a[15]="yashita";
+char b[15]="yashaswi";
+clrscr();
+goto c;
+printf("%s%s",a,b);
+c:
+printf("%s",a);
+getch();
+}
+</pre>
+</td>
+<td align="right">
+<img src="goto.png" height="300" width="500"/>
+</td>
+</tr>
+</table>
+
+<br><br><hr><br>
+<h2>
+<font size="5" face="castellar" color="darkblue">
+Continue
+</font>
+</h2>
+<font size="5">
+The continue statement in C programming works somewhat like the break statement. 
+Instead of forcing termination, it forces the next iteration of the loop to take place, skipping any code in between.
+<br><br><br>
+</font>
+
+<table bgcolor="white" align="center" width="1100">
+<tr>
+<th>Input</th>
+<th>Output</th>
+</tr>
+<tr>
+<td>
+<pre>
+#include&lt;stdio.h&gt;
+main()
+{
+int i;
+clrscr();
+for(i=0;i&lt;=8;i++)
+{
+if(i==5)\\<em>here 5 will not be printed and the for loop wil be continued.<em>
+{
+continue;
+}
+printf("%d\t",i);
+}
+getch();
+}
+</pre>
+</td>
+<td align="right">
+<img src="continue.png" height="300" width="500"/>
+</td>
+</tr>
+</table>
+<br><br><br>
+<a href="operators.html"><button>Previous to operators</button></a>
+<a href="functions.html"><button>Next to functions </button></a>
+</body>
+</html>

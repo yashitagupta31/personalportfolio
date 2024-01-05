@@ -1,0 +1,194 @@
+<html>
+<head>
+<style>
+td{
+font-size:18px;
+}
+button{
+background-color:darkblue;
+color:white;
+height:30px;
+margin-left:60px;
+margin-bottom:40px;
+border-radius:30px;
+font-size:20px;
+}
+</style>
+<title>String Functions</title>
+</head>
+<body bgcolor="floralwhite" border="left" bordercolor="darkblue">
+<center> 
+<table bgcolor="darkblue" width="1300">
+<tr>
+<td>
+<font  size="5" face="Candara" color="floralwhite">
+<h1>
+<center>
+<u>STRING FUNCTIONS</u>
+</center>
+</h1>
+</font>
+</td>
+</tr>
+</table>
+</center>
+<br><br>
+
+<h2>
+<font size="5" face="castellar" color="darkblue">
+The following are the string functions in C:-
+</font>
+</h2>
+<p>
+<ul type="square">
+<font size="5">
+<li><b><u>strlen</u></b>:- To determine the length of the string.</li>
+<br>
+<li><b><u>strlwr</u></b>:- To get the string written in lower case.</li>
+<br>
+<li><b><u>strupr</u></b>:- To get the string written in upper case.</li>
+<br> 
+<li><b><u>strcpy</u></b>:- To copy the string from one location to another.</li>
+<br>
+<li><b><u>strcat</u></b>:- To combine two strings and the result is returned to the first string.</li>
+</font>
+</ul>
+<br><br><br>
+
+<table bgcolor="white" align="center" width="1000">
+<tr><th colspan="2"><center>strlen</center></th></tr>
+<tr>
+<th>Input</th>
+<th>Output</th>
+</tr>
+<tr>
+<td>
+<pre>
+#include&lt;stdio.h&gt;
+main()
+{
+char a[30]="yashita gupta";
+clrscr();
+printf("%d",strlen(a));
+getch();
+}
+</pre>
+</td>
+<td align="right">
+<img height="300" width="500" src="strlen.png"></img>
+</td>
+</tr>
+</table>
+
+<br><br><br>
+<table bgcolor="white" align="center" width="1000">
+<tr><th colspan="2"><center>strlwr</center></th></tr>
+<tr>
+<th>Input</th>
+<th>Output</th>
+</tr>
+<tr>
+<td>
+<pre>
+#include&lt;stdio.h&gt;
+main()
+{
+char a[15]="YASHITA GUPTA";
+clrscr();
+printf("%s",strlwr(a));
+getch();
+}
+</pre>
+</td>
+<td align="right">
+<img height="300" width="500" src="strlwr.png"></img>
+</td>
+</tr>
+</table>
+
+<br><br><br>
+<table bgcolor="white" align="center" width="1000">
+<tr><th colspan="2"><center>strupr</center></th></tr>
+<tr>
+<th>Input</th>
+<th>Output</th>
+</tr>
+<tr>
+<td>
+<pre>
+#include&lt;stdio.h&gt;
+main()
+{
+char a[15]="yashita gupta";
+clrscr();
+printf("%s",strupr(a));
+getch();
+}
+</pre>
+</td>
+<td align="right">
+<img height="300" width="500" src="strupr.png"></img>
+</td>
+</tr>
+</table>
+
+<br><br><br>
+<table bgcolor="white" align="center" width="1000">
+<tr><th colspan="2"><center>strcpy</center></th></tr>
+<tr>
+<th>Input</th>
+<th>Output</th>
+</tr>
+<tr>
+<td>
+<pre>
+#include&lt;stdio.h&gt;
+main()
+{
+char a[30]="yashita";
+char b[20];
+clrscr();
+strcpy(b,a);
+printf("%s",b);
+getch();
+}
+</pre>
+</td>
+<td align="right">
+<img height="300" width="500" src="strcpy.png"></img>
+</td>
+</tr>
+</table>
+
+<br><br><br>
+<table bgcolor="white" align="center" width="1000">
+<tr><th colspan="2"><center>strcat</center></th></tr>
+<tr>
+<th>Input</th>
+<th>Output</th>
+</tr>
+<tr>
+<td>
+<pre>
+#include&lt;stdio.h&gt;
+main()
+{
+char a[30]="yashita";
+char b[20]="mittal";
+clrscr();
+strcat(a,b);
+printf("%s",a);
+getch();
+}
+</pre>
+</td>
+<td align="right">
+<img height="300" width="500" src="strcat.png"></img>
+</td>
+</tr>
+</table>
+<br><br><br>
+<a href="pointer.html"><button>Previous to pointer</button></a>
+<a href="file handling.html"><button>Next to file handling</button></a>
+</body>
+</html>

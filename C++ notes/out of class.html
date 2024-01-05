@@ -1,0 +1,121 @@
+<html>
+<head>
+<title>out of class function</title>
+<style>
+body{
+background-color:snow;
+margin: 10px 10px 10px 10px;
+}
+h1.a{
+font-size:50px;
+font-family:latin;
+background-color:lightseagreen;
+text-align:center;
+color:white;
+}
+td{
+font-size:18px;
+}
+table{
+border-style:dashed;
+padding:5px;
+}
+th{
+font-size:20px;
+}
+i{
+color:brown;
+}
+</style>
+</head>
+<body>
+<h1 class="a">FUNTION BODY OUT OF CLASS</h1>
+<br>
+<table align="center" cellspacing="30px">
+<tr>
+<th>Syntax</th>
+<th>Input</th>
+<th>Output</th>
+</tr>
+<tr>
+<td>
+<pre>
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+class abc
+{
+private:
+int var1,var2,var3;
+public:
+void function();
+};
+void abc::function()
+{
+_________;
+_________;
+}
+void main()
+{
+abc a1;
+a1.function();
+getch();
+}
+</pre>
+</td>
+<td>
+<pre>
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+class abc
+{
+private:
+char firstname[20],middlename[20],lastname[20];
+char mothername[50],fathername[50],gender;
+public:
+void name();
+void personal_details();
+void display();
+};
+void abc::name()
+{
+cout&lt;&lt;"\nfirst name:";
+cin>>firstname;
+cout&lt;&lt;"\nmiddle name:";
+cin>>middlename;
+cout&lt;&lt;"\nlast name:";
+cin>>lastname;
+}
+void abc::personal_details()
+{
+cout&lt;&lt;"\nfather's name:";
+cin>>fathername;
+cout&lt;&lt;"\nmother's name:";
+cin>>mothername;
+cout&lt;&lt;"\ngender:";
+cin>>gender;
+}
+void abc::display()
+{
+cout&lt;&lt;"\n"&lt;&lt;firstname&lt;&lt;" "&lt;&lt;middlename&lt;&lt;" "&lt;&lt;lastname;
+cout&lt;&lt;"\n"&lt;&lt;mothername&lt;&lt;"\n"&lt;&lt;fathername&lt;&lt;"\n"&lt;&lt;gender;
+}
+void main()
+{
+abc a;
+clrscr();
+a.name();
+a.personal_details();
+a.display();
+getch();
+}
+</pre>
+</td>
+<td valign="top">
+<video controls height="200" width="300"><source src="outofclassfunction.mp4" type="video/mp4"/></video>
+</td>
+</tr>
+</table>
+<br><br>
+
+</body>
+</html>

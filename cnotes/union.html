@@ -1,0 +1,100 @@
+<html>
+<head>
+<style>
+button{
+background-color:darkblue;
+color:white;
+height:30px;
+margin-left:60px;
+margin-bottom:40px;
+border-radius:30px;
+font-size:20px;
+}
+</style>
+<link rel="stylesheet" href="stylingcnotes.css">
+<title>Union</title>
+</head>
+<body bgcolor="floralwhite" border="left" bordercolor="darkblue">
+<center> 
+<table bgcolor="darkblue" width="1300">
+<tr>
+<th>
+<font  size="5" face="Candara" color="floralwhite">
+<h1>
+<center>
+<u>UNION</u>
+</center>
+</h1>
+</font>
+</th>
+</tr>
+</table>
+</center>
+<br><br>
+
+<h2>
+<font size="5" face="castellar" color="darkblue">
+What is Union?
+</font>
+</h2>
+<p>
+<font size="5">
+Union is a user-defined data type that contains different variables of different data types in the same memory location. 
+Unlike structure only one variable can be assigned a value in union. 
+</font>
+</p>
+
+<br><br><br>
+<table bgcolor="white" align="center" width="1300">
+<tr>
+<th><em>Syntax</em></th>
+<th>Input</th>
+<th>Output</th>
+</tr>
+<tr>
+<td>
+<pre>
+#include&lt;stdio.h&gt;
+void main()  
+{
+union abc
+{           
+int a,b,c;
+char d,e,f;
+float g,h,i;      
+}
+union abc p;          
+p.a=10;
+_____;
+_____;
+getch();
+}
+</td>
+<td>
+<pre>
+#include&lt;stdio.h&gt;
+void main()
+{
+union abc
+{
+int a,b;
+};
+union abc x;
+clrscr();
+x.a=30;
+x.b=90;
+printf("%d\n%d\n%d",x.a,x.b);
+getch();
+}
+</pre>
+</td>
+<td align="right">
+<img height="400" width="600" src="union.png"></img>
+</td>
+</tr>
+</table>
+<br><br><br>
+<a href="structure.html"><button>Previous to structure</button></a>
+<a href="pointer.html"><button>Next to pointer </button></a>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>constructor with arguement</title>
+<style>
+body{
+background-color:snow;
+margin: 10px 10px 10px 10px;
+}
+h1.a{
+font-size:50px;
+font-family:latin;
+background-color:lightseagreen;
+text-align:center;
+color:white;
+}
+td{
+font-size:18px;
+}
+table{
+border-style:dashed;
+padding:5px;
+}
+th{
+font-size:20px;
+}
+i{
+color:brown;
+}
+</style>
+</head>
+<body>
+<h1 class="a">CONSTRUCTOR With ARGUEMENT</h1>
+<br>
+<table align="center" cellspacing="5px" width="900">
+<tr>
+<th>Input</th>
+<th>Output</th>
+</tr>
+<tr>
+<td>
+<pre>
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+class abc
+{
+public:
+int a,b,c;
+abc(int x,int y)<i>//constructor with arguement </i>
+{
+x=a;
+y=b;
+}
+void add()
+{
+c=a+b;
+cout&lt;&lt;a&lt;&lt;"+"&lt;&lt;b&lt;&lt;"="&lt;&lt;c;
+cout&lt;&lt;"\n";
+}
+};
+void main()
+{
+clrscr();
+abc a1(10,20);
+abc a2(30,40);
+abc a3(50,60);
+
+a1.add();
+a2.add();
+a3.add();
+getch();
+}
+</pre>
+</td>
+<td valign="top">
+<img src="constructorwitharg.png">
+</td>
+</tr>
+</table>
+<br><br>
+
+</body>
+</html>

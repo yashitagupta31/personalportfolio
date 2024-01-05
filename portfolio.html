@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <title>Personal_portfolio</title>
+    <style>
+        body {
+            background-color: rgb(27 27 73);
+            color: white;
+            margin: 0 15px;
+        }
+
+        nav {
+            background-color: rgb(37 37 99);
+            height: 60px;
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        ul.controls {
+            display: flex;
+            vertical-align: middle;
+            margin-left: 50px;
+        }
+
+        nav ul.controls li {
+            margin: 0 15px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        ul.controls li:hover {
+            color: lavender;
+            font-size: 16px;
+        }
+
+        .heading {
+            font-family: 'Poppins', sans-serif;
+            font-size: 24px;
+            padding: 10px 0;
+
+        }
+
+        .information {
+            display: flex;
+            justify-content: space-around;
+            margin: 7% 20%;
+
+        }
+
+        .text {
+
+
+            width: 30%;
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+
+
+        }
+
+        .image {
+            padding-top: 10px;
+            width: 30%;
+            vertical-align: middle;
+            border-right: 1px solid lavender;
+            padding-right: 40px;
+
+        }
+
+        .projects {
+            background-color: #262650;
+
+
+        }
+
+        h3 {
+            padding-left: 50px;
+        }
+
+        .projectsname {
+            padding: 0 20px;
+            vertical-align: top;
+        }
+
+        a:link {
+            color: white;
+        }
+
+        a:active {
+            color: white;
+        }
+
+        a:visited {
+            color: white;
+        }
+
+        a:hover {
+            color:blue;
+        }
+        footer{
+            background-color: rgb(37 37 99);
+            padding-top: 1px;
+            background-color: #28285a;
+        
+        }
+        .contactDetails{
+            display:flex;
+            justify-content: space-around;
+            padding-bottom: 10px;
+           
+        }
+        .copyright{
+            padding-top:20px;
+            padding-left:50px;
+            color:gray;
+            background-color: rgb(37 37 99);
+        }
+        h3{
+            font-family: 'Poppins', sans-serif;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="heading">
+                Personal Portfolio
+            </div>
+            <ul type="none" class="controls">
+                <li>Home</li>
+                <li>About</li>
+                <li>Projects</li>
+                <li>Contact</li>
+            </ul>
+
+
+        </nav>
+    </header>
+    <div class="information">
+
+        <section class="image">
+            <img src="bg.png" height="200px" width="300px" align="right"></img>
+        </section>
+        <section class="text" align="left">
+            Hi, My name is <font color="lavender" size="5px">Yashita.</font> <br>I am passionate about being a
+            <br>
+            Web Developer.
+            <br>
+            and currently i am learning <br>CSS and Javascript.
+
+        </section>
+    </div>
+    <div class="projects">
+        <h3>
+            Projects
+        </h3>
+        <table>
+            <tr>
+                <td class="projectsname">
+                    <h4><a href="facebook.html">Facebook Home Page</a></h4>
+                    <font color="lavender" size="3">This has been designed using html only.</font>
+                </td>
+                <td class="projectsname">
+                    <h4><a href="cnotes/learning c.html">C notes</a></h4>
+                    <font color="lavender" size="3">This has been designed using html only.</font>
+                </td>
+
+                <td class="projectsname">
+                    <h4><a href="C++ notes/C++.html">C++ notes</a></h4>
+                    <font color="lavender" size="3">This has been designed using html and CSS only.</font>
+                </td>
+                <td class="projectsname">
+                    <h4><a href="">Calculator</a></h4>
+                    <font color="lavender" size="3">It has been designed using html and basic CSS.
+                        It is just a design and not working as i have just started learning javascript.</font>
+                </td>
+
+
+                <td class="projectsname">
+                    <h4><a href="">Tic-Tac-Toe</a></h4>
+                    <font color="lavender" size="3">It has been designed using html and basic CSS.
+                        It is just a design and not working as i have just started learning javascript.</font>
+                </td>
+            </tr>
+        </table>
+    </div>
+   
+    <footer>
+        <h3>Contact Details</h3>
+        
+           <div class="contactDetails">
+                <div>
+                    <font size="4"><img src="Gmail_Logo_32px.png" height="30%" width="10%"/> Gmail</font><br>
+                yashitagupta92@gmail.com
+                </div>
+                <div>
+                    <font size="4"><img src="linkedin.png"/> LinkedIn</font><br>
+                https://www.linkedin.com/in/yashita-gupta-495387291
+                </div>
+                <div>
+                    <font size="4"><img src="phone..png"/>Contact Number</font><br>
+                9056365268
+                </div>
+             </div>  
+             <div class="copyright">ⒸCopyright rights are reserved</div> 
+                
+              
+            
+            
+        </table>
+    </footer>
+</body>
+
+</html>

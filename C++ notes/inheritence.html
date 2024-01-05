@@ -1,0 +1,338 @@
+<html>
+<head>
+<title>inheritence</title>
+<style>
+body{
+background-color:snow;
+margin: 10px 10px 10px 10px;
+}
+h1.a{
+font-size:50px;
+font-family:latin;
+background-color:lightseagreen;
+text-align:center;
+color:white;
+}
+h1.b{
+font-size:30px;
+font-family:imprint mt shadow;
+color:lightseagreen;
+border-bottom:ridge lightseagreen;
+}
+.c{
+font-size:26px;
+font-family:imprint mt shadow;
+color:lightseagreen;
+padding-left:15px;
+}
+p.p{
+font-size:24px;
+}
+p.q{
+font-size:22px;
+}
+td{
+font-size:18px;
+}
+table{
+border-style:dashed;
+padding:5px;
+}
+th{
+font-size:20px;
+}
+i{
+color:brown;
+}
+</style>
+</head>
+<body>
+<h1 class="a">INHERITENCE</h1>
+<br>
+<h1 class="b">What is Inheritence?</h1>
+<p class="p">Inheritence is a process which inherits properties of one class (base class) to anoher class (derived class).</p>
+<p class="q">Inheritence can be:
+<br>
+<ul><li class="c">Single</li>
+<br><img src="single inheritence.png">
+<br>
+<table align="center" cellspacing="5px" width="900">
+<tr>
+<th>Syntax</th>
+<th>Input</th>
+<th>Output</th>
+</tr>
+<tr>
+<td>
+<pre>
+class abc
+{
+private:
+_______;
+public:
+void function()
+{
+_______;
+_______;
+}
+};
+class xyz:public abc{
+private:
+_______;
+public:
+void function2()
+{
+function();
+_______;
+_______;
+}
+};
+void main()
+{
+xyz obj1;
+obj1.function2();
+getch();
+}
+</pre>
+</td>
+<td>
+<pre>
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+
+</pre>
+</td>
+<td valign="top">
+<img src="constructor.png">
+</td>
+</tr>
+</table>
+
+<br><br>
+<li class="c">Multiple</li>
+<br>
+<img src="multiple inheritence.png">
+<br>
+<table align="center" cellspacing="5px" width="900">
+<tr>
+<th>Syntax</th>
+<th>Input</th>
+<th>Output</th>
+</tr>
+<tr>
+<td>
+<pre>
+class abc <i>//Base class</i>
+{
+_______;
+_______;
+};
+class def{ <i>//Base class</i>
+_______;
+_______;
+};
+class xyz:public abc,public def <i>//derived class of abc and def.</i>
+{
+_______;
+_______;
+};
+void main()
+{
+_______;
+_______;
+}
+</pre>
+</td>
+<td>
+<pre>
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+
+</pre>
+</td>
+<td valign="top">
+<img src="constructor.png">
+</td>
+</tr>
+</table>
+<li class="c">Multilevel</li>
+<br>
+<img src="multilevel inheritence.png">
+<br>
+<table align="center" cellspacing="5px" width="900">
+<tr>
+<th>Syntax</th>
+<th>Input</th>
+<th>Output</th>
+</tr>
+<tr>
+<td>
+<pre>
+class based <i>//Base class</i>
+{
+_______;
+_______;
+};
+class der1:public based <i>//Derived class from class based</i>
+{
+_______;
+_______;
+};
+class der2:public der1 <i>//Derived class from class der1</i>
+{
+_______;
+_______;
+};
+void main()
+{
+_______;
+_______;;
+}
+</pre>
+</td>
+<td>
+<pre>
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+
+</pre>
+</td>
+<td valign="top">
+<img src="constructor.png">
+</td>
+</tr>
+</table>
+<br><br>
+
+<li class="c">Hierarchical</li>
+<br>
+<img src="hierarchical inheritence.png">
+<br>
+<table align="center" cellspacing="5px" width="900">
+<tr>
+<th>Syntax</th>
+<th>Input</th>
+<th>Output</th>
+</tr>
+<tr>
+<td>
+<pre>
+class A<i>//base class</i>
+{
+_______;
+_______;
+};
+class B:public A<i>//derived class of A</i>
+{
+_______;
+_______;
+};
+class C:public A<i>//derived class of A</i>
+{
+_______;
+_______;
+};
+class D:public B<i>//derived class of B</i>
+{
+_______;
+_______;
+};
+class E:public B<i>//derived class of B</i>
+{
+_______;
+_______;
+};
+class F:public C<i>//derived class of C</i>
+{
+_______;
+_______;
+};
+class G:public C<i>//derived class of C</i>
+{
+_______;
+_______;
+};
+void main()
+{
+_______;
+_______;
+}
+</pre>
+</td>
+<td>
+<pre>
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+
+</pre>
+</td>
+<td valign="top">
+<img src="constructor.png">
+</td>
+</tr>
+</table>
+<br><br>
+
+<li class="c">Hybrid</li>
+<br>
+<img src="hybrid inheritence.png">
+<br>
+<table align="center" cellspacing="5px" width="900">
+<tr>
+<th>Syntax</th>
+<th>Input</th>
+<th>Output</th>
+</tr>
+<tr>
+<td>
+<pre>
+class A <i>//Base class</i>
+{
+_______;
+_______;
+};
+class B:public A <i>derived class of A</i>
+{
+_______;
+_______;
+};
+class C:public A <i>//derived class of A</i>
+{
+_______;
+_______;
+};
+class D:public B, public C <i>//derived class of B and C.</i>
+{
+_______;
+_______;
+};
+void main()
+{
+_______;
+_______;
+}
+</pre>
+</td>
+<td>
+<pre>
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+
+</pre>
+</td>
+<td valign="top">
+<img src="constructor.png">
+</td>
+</tr>
+</table>
+<br><br>
+</ul>
+<br>
+</p>
+<br><br>
+
+
+<br><br>
+
+</body>
+</html>

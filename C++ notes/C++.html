@@ -1,0 +1,117 @@
+<html>
+<head>
+<title>C++</title>
+<style>
+body{
+background-color:snow;
+margin: 10px 10px 10px 10px;
+}
+h1.a{
+font-size:80px;
+font-family:latin;
+background-color:lightseagreen;
+text-align:center;
+color:white;
+}
+h1.b{
+font-size:30px;
+font-family:imprint mt shadow;
+color:lightseagreen;
+border-bottom:ridge lightseagreen;
+}
+.c{
+font-size:26px;
+font-family:imprint mt shadow;
+color:lightseagreen;
+padding-left:15px;
+}
+p.p{
+font-size:24px;
+}
+p.q{
+font-size:22px;
+}
+td{
+font-size:18px;
+}
+table{
+border-style:dashed;
+padding:5px;
+}
+th{
+font-size:20px;
+}
+i{
+color:brown;
+}
+</style>
+</head>
+<body>
+<h1 class="a">C++</h1>
+<br>
+<table align="center" cellspacing="5px">
+<tr>
+<th>Input</th>
+<th>Output</th>
+</tr>
+<tr>
+<td>
+<pre>
+#include&lt;iostream.h&gt; <i>//header file (input output stream.header)</i>
+#include&lt;conio.h&gt; <i>//console input output.header</i>
+class abc <i>//class </i>
+{
+private: <i>//private member accessifier </i>
+int a,b,c; <i>//datamembers</i>
+public: <i>//public member accessifier</i>
+void add() <i>//member function</i>
+{
+a=10;
+b=40;
+c=a+b;
+cout&lt;&lt;"c="&lt;&lt;c;
+}
+}; <i>//ending a class with scurlu brace and semi colon</i>
+void main()
+{
+abc a1; <i>//declaring object</i>
+clrscr();
+a1.add(); <i>//encapsulation</i>
+getch();
+}
+</pre>
+</td>
+<td>
+<img src="basiccpp.png">
+</td>
+</tr>
+</table>
+<br><br>
+
+<h1 class="b">CLASS</h1>
+<p class="p">Class in C++ is the building block that leads to Object-Oriented programming. A class is a blueprint for the object.</p>
+<p class="q">We can think of a class as a sketch of a house.It contains all the details about the floors, doors, windows, etc. The sketch is the class.</p>
+<br>
+
+<h1 class="b">OBJECT</h1>
+<p class="p">Object is an instance of a class that has the properties and behaviours of the class attatched</p>
+<p class="q">In the above example, based on the descriptions we build the house. House is the object.</p> <br>
+
+<h1 class="b">DATA MEMBERS</h1>
+<p class="p">The variables used in a class are referred as Data Members.</p><br>
+
+<h1 class="b">MEMBER FUNCTION</h1>
+<p class="p">The functions of class are referred as Member Function.</p><br>
+
+<h1 class="b">MEMBER ACCESSIFIERS</h1>
+<p class="p">Data members or member functions in a class have to defined as public, private or protected which defines that who can access this members.</p>
+<p class="c">Private</p><p class="q">Data type and member functions under private can be accessed only in that class.</p>
+<p class="c">Public</p><p class="q">Data type and member functions under public can be accessed anywhere in the program.</p>
+<p class="c">Protected</p><p class="q">Data type and member functions under protected can be accessed only by friend class.</p>
+<br>
+
+<h1 class="b">ENCAPSULATION</h1>
+<p class="p">It is the process of binding an object with data member or member function is called encapsulation.</p><br>
+
+</body>
+</html>

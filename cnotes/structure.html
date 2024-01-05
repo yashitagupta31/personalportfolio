@@ -1,0 +1,126 @@
+<html>
+<head>
+<style>
+button{
+background-color:darkblue;
+color:white;
+height:30px;
+margin-left:60px;
+margin-bottom:40px;
+border-radius:30px;
+font-size:20px;
+}
+</style>
+<link rel="stylesheet" href="stylingcnotes.css">
+<title>Structure</title>
+</head>
+<body bgcolor="floralwhite" border="left" bordercolor="darkblue">
+<center> 
+<table bgcolor="darkblue" width="1300">
+<tr>
+<th>
+<font  size="5" face="Candara" color="floralwhite">
+<h1>
+<center>
+<u>STRUCTURE</u>
+</center>
+</h1>
+</font>
+</th>
+</tr>
+</table>
+</center>
+<br><br>
+
+<h2>
+<font size="5" face="castellar" color="darkblue">
+What is Structure?
+</font>
+</h2>
+<p>
+<font size="5">
+Structure in C is a user-defined data type used to bind two or more similar or different data types into a single type.
+It makes the program code organised and easy to read.
+<br>
+Struct keyword is used to declare a structure. Structure can be declared in or before main.
+<br>
+Value to the variables declared in structure can be given through object only.
+</font>
+</p>
+
+<br><br><br>
+<table bgcolor="white" align="center" width="1300">
+<tr>
+<th><em>Syntax</em></th>
+<th>Input</th>
+<th>Output</th>
+</tr>
+<tr>
+<td>
+<pre>
+#include&lt;stdio.h&gt;
+void main()  
+{
+struct abc
+{           
+int a,b,c;
+char d,e,f;
+float g,h,i;      
+}
+struct abc p;\\declaration of object          
+p.a=10;
+_____;
+_____;
+getch();
+}
+</td>
+<td>
+<font size="4">
+<pre>
+#include&lt;stdio.h&gt;
+void main()
+{
+struct add
+{
+int a,b,c;
+};
+struct subtract
+{
+int d,e,f;
+};
+struct add add1;
+struct subtract sub1;
+struct subtract sub2;
+struct add add2;
+clrscr();
+add1.a=15;
+add1.b=23;
+add1.c=add1.a+add1.b;
+printf("\n%d\t+\t%d=\t%d",add1.a,add1.b,add1.c);
+add2.a=19;
+add2.b=26;
+add2.c=add2.a+add2.b;
+printf("\n%d\t+\t%d=\t%d",add2.a,add2.b,add2.c);
+sub1.d=19;
+sub1.e=26;
+sub1.f=sub1.e-sub1.d;
+printf("\n%d\t-\t%d=\t%d",sub1.e,sub1.d,sub1.f);
+sub2.d=29;
+sub2.e=56;
+sub2.f=sub2.e-sub2.d;
+printf("\n%d\t-\t%d=\t%d",sub2.e,sub2.d,sub2.f);
+getch();
+}
+</pre>
+</font>
+</td>
+<td align="right">
+<img height="400" width="600" src="structure.png"></img>
+</td>
+</tr>
+</table>
+<br><br><br>
+<a href="array.html"><button>Previous to array</button></a>
+<a href="union.html"><button>Next to union </button></a>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<html>
+<head>
+<style>
+td{
+font-size:18px;
+}
+th{
+font-size:20px;
+}
+button{
+background-color:darkblue;
+color:white;
+height:30px;
+margin-left:60px;
+margin-bottom:40px;
+border-radius:30px;
+font-size:20px;
+}
+</style>
+<title>File Handling</title>
+</head>
+<body bgcolor="floralwhite" border="left" bordercolor="darkblue">
+<center> 
+<table bgcolor="darkblue" width="1300">
+<tr>
+<td>
+<font  size="5" face="Candara" color="floralwhite">
+<h1>
+<center>
+<u>FILE HANDLING</u>
+</center>
+</h1>
+</font>
+</td>
+</tr>
+</table>
+</center>
+<br><br>
+
+<h2>
+<font size="5" face="castellar" color="darkblue">
+What is file handling?
+</font>
+</h2>
+<p>
+<font size="5">
+File handling in C is the process in which we create, open, read, write, and close operations on a file.
+<br>
+For this operations the program code needs a new header file named #include&lt;stdlib.h&gt;.
+<br>
+To carry out these operations one must ensure that the file being used in operations is saved in the BIN folder.
+<br><br>
+There are 3 modes of file operation in C:
+<ul>
+<li>Read ("r")</li>
+<li>Write ("w")</li>
+<li>Append ("a")</li>
+</ul>
+<br><br> There are some in-built functions for differen file operation. These are:
+<br>
+<ul>
+<li>fopen() for opening a file.</li>
+<li>fclose() for closing a file.</li>
+<li>fprintf() and fputs() for printing text in a file.</li>
+<li>fscanf() and fgets() for reading text in a file.</li>
+</font>
+<br><br><br>
+
+<table bgcolor="white" align="center" width="1300">
+<tr>
+<th colspan="2">
+<center>Writing in a File</center>
+</th>
+</tr>
+<tr>
+<th>Input</th>
+<th>Output</th>
+</tr>
+<tr>
+<td>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;stdlib.h&gt;
+main()
+{
+FILE *a; <em>//a is a file pointer variable declared using keyword FILE.</em>
+clrscr();
+a=fopen("file3.txt","w"); <em>//w stand for write mode</em>
+fprintf(a,"THIS TEXT IS TYPED USING FPRINTF FUNCTION");
+getch();
+}
+</pre>
+</td>
+<td align="right">
+<img height="400" width="600" src="write mode.png"></img>
+</td>
+</tr>
+</table>
+<br><br><br>
+
+<table bgcolor="white" align="center" width="1300">
+<tr>
+<th colspan="2">
+<center>Reading from a File</center>
+</th>
+</tr>
+<tr>
+<th>Input</th>
+<th>Output</th>
+</tr>
+<tr>
+<td>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;stdlib.h&gt;
+main()
+{
+FILE *a;
+char b[100];
+clrscr();
+a= fopen("file2.txt","r"); <em>//r stands for read mode</em>
+fgets(b,100,a);
+printf("%s",b);
+fclose(a);
+getch();
+}
+</pre>
+</td>
+<td align="right">
+<img height="400" width="600" src="read mode.png"></img>
+</td>
+</tr>
+</table>
+<br><br><br>
+
+<table bgcolor="white" align="center" width="1300">
+<tr>
+<th colspan="2">
+<center>Appending in a File</center>
+</th>
+</tr>
+<tr>
+<th>Input</th>
+<th>Output</th>
+</tr>
+<tr>
+<td>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;stdlib.h&gt;
+main()
+{
+FILE *x;
+clrscr();
+x=fopen("file5.txt","a");
+fprintf(x,"enter some");
+getch();
+}
+</pre>
+</td>
+<td align="right">
+<img height="400" width="600" src="append mode.png"></img>
+</td>
+</tr>
+</table>
+<br><br><br>
+<a href="pointer.html"><button>Previous to pointer</button></a>
+<a href="learning c.html"><button>back to home page </button></a>

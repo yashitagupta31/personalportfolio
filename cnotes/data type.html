@@ -1,0 +1,256 @@
+<html>
+<head>
+<style>
+td{
+font-size:18px;
+}
+li{
+font-size:24px;
+}
+button{
+background-color:darkblue;
+color:white;
+height:30px;
+margin-left:60px;
+margin-bottom:40px;
+border-radius:30px;
+font-size:20px;
+}
+</style>
+<title>Data Types</title>
+</head>
+
+<body bgcolor="floralwhite" border="5" bordercolor="darkblue">
+
+<center> 
+<table bgcolor="darkblue" width="1300">
+<tr>
+<td>
+<font  size="5" face="Candara" color="floralwhite">
+<h1>
+<center>
+<u>DATA TYPES</u>
+</center>
+</h1>
+</font>
+</td>
+</tr>
+</table>
+</center>
+<br><br>
+
+<h2>
+<font size="5" face="castellar" color="darkblue">
+What are Data Types?
+</font>
+</h2>
+<p>
+<font size="5">
+Data type is a memory storing place. It is used to avoid wastage of memory and unnecessary use of memory. A data type stores a particular type of data.
+</font>
+</p>
+<br>
+<center><img src="datatype.png"></img></center>
+
+<h2>
+<font size="5" face="castellar" color="darkblue">
+Integer
+</font>
+</h2>
+<font size="5">
+Integer data type includes all the negative values, positive values and zero.
+</font>
+<br>
+<ul>
+<li>int is the keyword used for Integer data type.</li>
+<li>%d is used to print/scan the integer data type.</li>
+</ul>
+</font>
+
+<br><br>
+<table bgcolor="white" align="center" width="900">
+<tr>
+<th>Input</th>
+<th>Output</th>
+</tr>
+<tr>
+<td>
+<pre>
+#include&lt;stdio.h&gt;
+main()
+{
+int a,b,c,d,e;
+clrscr();
+a=10;
+b=20;
+c=30;
+d=40;
+e=50;
+printf("%d\n%d\n%d\n%d\n%d",a,b,c,d,e);
+}
+</pre>
+</td>
+<td align="right">
+<img src="intdatatype.png" height="300" width="500"/>
+</td>
+</tr>
+</table>
+<br><hr><br>
+
+<h2>
+<font size="5" face="castellar" color="darkblue">
+Float
+</font>
+</h2>
+<font size="5">
+Float data type includes all the integer values as well as decimal values.
+<ul>
+<li>float is the keyword used for Float data type.</li>
+<li>%f is used to print/scan the Float data type.</li>
+</ul>
+</font>
+
+<br><br>
+<table bgcolor="white" align="center" width="900">
+<tr>
+<th>Input</th>
+<th>Output</th>
+</tr>
+
+<tr>
+<td>
+<pre>
+#include&lt;stdio.h&gt;
+main()
+{
+float a,b,c,d,e;
+clrscr();
+a=10.5;
+b=20.6;
+c=30.7;
+d=40.8;
+e=50.9;
+printf("%f\n%f\n%f\n%f\n%f",a,b,c,d,e);
+}
+<pre>
+</td>
+<td align="right">
+<img src="floatdatatype.png" height="300" width="500"/>
+</td>
+</tr>
+</table>
+
+<br><hr><br>
+<h2>
+<font size="5" face="castellar" color="darkblue">
+Character
+</font>
+</h2>
+<font size="5">
+Character data type includes letters, numbers and symbols.
+<ul>
+<li>char is the keyword used for Character data type.</li>
+<li>%c is used to print/scan the Character data type.</li>
+</ul>
+</font>
+
+<br><br>
+<table bgcolor="white" align="center" width="900">
+<tr>
+<th>Input</th>
+<th>Output</th>
+</tr>
+
+<tr>
+<td>
+<pre>
+#include&lt;stdio.h&gt;
+main()
+{
+char aman;
+clrscr();
+aman='a';
+printf("%c",aman);
+}
+<pre>
+</td>
+<td align="right">
+<img src="chardatatype.png" height="300" width="500"/>
+</td>
+</tr>
+</table>
+<br>
+
+<table bgcolor="white" align="center" width="900">
+<tr>
+<th>Input</th>
+<th>Output</th>
+</tr>
+
+<tr>
+<td>
+<pre>
+#include&lt;stdio.h&gt
+main()
+{
+char a,b,c,d,e;
+clrscr();
+a='9';
+b='-';
+c='1';
+d='=';
+e='8';
+printf("%c%c%c%c%c",a,b,c,d,e);
+}
+<pre>
+</td>
+<td align="right">
+<img src="characterdatatype.png" height="300" width="500"/>
+</td>
+</tr>
+</table>
+
+<br><hr><br>
+<h2>
+<font size="5" face="castellar" color="darkblue">
+String
+</font>
+</h2>
+<font size="5">
+String data type includes collection of letters, numbers and symbols.
+<ul>
+<li>char is the keyword used for String data type.</li>
+<li>%s is used to print/scan the String data type.</li>
+<li>The length of the value assigned to string variable is mentioned in the square bracket with the variable. (This length includes spaces and the number mentioned should be one more then the actual counted number)</li>
+</ul>
+</font>
+
+<br><br>
+<table bgcolor="white" align="center" width="900">
+<tr>
+<th>Input</th>
+<th>Output</th>
+</tr>
+
+<tr>
+<td>
+<pre>
+#include&lt;stdio.h&gt;
+main()
+{
+char a1[10]="yashita";
+clrscr();
+printf("%s",a1);
+}
+<pre>
+</td>
+<td align="right">
+<img src="stringdatatype.png" height="300" width="500"/>
+</td>
+</tr>
+</table>
+<br><br><br>
+<a href="learning c.html"><button>Previous to home page</button></a>
+<a href="operators.html"><button>Next to operators</button></a>
+</body>
+</html>
